@@ -1,0 +1,37 @@
+Ruby2Lolz translates Ruby code into LOLCODE (http://www.lolcode.com)
+
+For example:
+
+class Simple
+  def add(n1, n2)
+    return n1 + n2
+  end
+end
+
+Ruby2Lolz.translate(Simple, :add)
+
+HOW DUZ I HAZ add [YR n1, YR n2]
+  (n1 + n2)
+IF U SAY SO
+
+### OR ###
+
+> Ruby2Lolz.translate({:nickname => [:ig, :igrigorik]}.inspect)
+
+OH HAI
+  I CAN HAS Nickname
+     I CAN MANY HAZ
+        AWSUM VAR
+           ig
+        KTHNX.
+        AWSUM VAR
+           igrigorik
+        KTHNX.
+    KTHNXBYE.
+  KTHNX.
+KTHNXBYE.
+
+### OR ###
+
+Put some Lolz into your API!
+ - http://pastie.org/327494

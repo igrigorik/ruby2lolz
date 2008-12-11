@@ -1,0 +1,3 @@
+HOW DUZ I HAZ hello [YR str]
+  puts str
+IF U SAY SO
