@@ -1,6 +1,6 @@
 spec = Gem::Specification.new do |s|
   s.name = 'ruby2lolz'
-  s.version = '0.1'
+  s.version = '0.1.1'
   s.date = '2009-03-31'
   s.summary = 'Ruby to Lolcode translator, kthnxbai.'
   s.description = s.summary
