@@ -12,10 +12,11 @@ spec = Gem::Specification.new do |s|
  
   # ruby -rpp -e' pp `git ls-files`.split("\n") '
   s.files = ["README",
-	 "ruby2lolz.rb",
- 	 "spec/lolz_spec.rb",
- 	 "spec/specs/array.txt",
- 	 "spec/specs/hash.txt",
- 	 "spec/specs/hash_array.txt",
- 	 "spec/specs/method.txt"]
+ "ruby2lolz.gemspec",
+ "ruby2lolz.rb",
+ "spec/lolz_spec.rb",
+ "spec/specs/array.txt",
+ "spec/specs/hash.txt",
+ "spec/specs/hash_array.txt",
+ "spec/specs/method.txt"]
 end
