@@ -1,37 +1,38 @@
 Ruby2Lolz translates Ruby code into LOLCODE (http://www.lolcode.com)
+- http://www.igvita.com/2008/12/11/ruby-ast-for-fun-and-profit/
 
-For example:
+== Translating Ruby Hash & Array:
+  require 'ruby2lolz'
+  # adds Hash.to_lolz, and Array.to_lolz
 
-class Simple
-  def add(n1, n2)
-    return n1 + n2
+  puts {:nickname => [:ig, :igrigorik]}.to_lolz
+
+  OH HAI
+    I CAN HAS Nickname
+       I CAN MANY HAZ
+          AWSUM VAR
+             ig
+          KTHNX.
+          AWSUM VAR
+             igrigorik
+          KTHNX.
+      KTHNXBYE.
+    KTHNX.
+  KTHNXBYE.
+
+Put some Lolz into your API
+- http://pastie.org/327494
+
+== Translating a class:
+
+  class Simple
+    def add(n1, n2)
+      return n1 + n2
+    end
   end
-end
 
-Ruby2Lolz.translate(Simple, :add)
+  Ruby2Lolz.translate(Simple, :add)
 
-HOW DUZ I HAZ add [YR n1, YR n2]
-  (n1 + n2)
-IF U SAY SO
-
-### OR ###
-
-> Ruby2Lolz.translate({:nickname => [:ig, :igrigorik]}.inspect)
-
-OH HAI
-  I CAN HAS Nickname
-     I CAN MANY HAZ
-        AWSUM VAR
-           ig
-        KTHNX.
-        AWSUM VAR
-           igrigorik
-        KTHNX.
-    KTHNXBYE.
-  KTHNX.
-KTHNXBYE.
-
-### OR ###
-
-Put some Lolz into your API!
- - http://pastie.org/327494 
+  HOW DUZ I HAZ add [YR n1, YR n2]
+    (n1 + n2)
+  IF U SAY SO
