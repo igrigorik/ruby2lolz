@@ -6,6 +6,14 @@ require "parse_tree"
 require "parse_tree_extensions"
 require "unified_ruby"
 
+class Hash
+  def to_lolz; Ruby2Lolz.translate(self.inspect); end
+end
+
+class Array
+  def to_lolz; Ruby2Lolz.translate(self.inspect); end
+end
+
 class Ruby2Lolz < SexpProcessor
 
   def self.translate(klass_or_str, method = nil)

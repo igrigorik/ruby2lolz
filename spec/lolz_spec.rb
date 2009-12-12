@@ -17,17 +17,29 @@ describe Ruby2Lolz do
     h = {:user => "Ilya"}.inspect
     Ruby2Lolz.translate(h).should == read_spec("hash")
   end
+  
+  it "should translate Ruby hash to lolz, kthnx" do
+    {:user => "Ilya"}.to_lolz.should == read_spec("hash")
+  end
 
   it "should translate Ruby array to lolz, kthnx" do
     a = ["igrigorik", "ig"].inspect
     Ruby2Lolz.translate(a).should == read_spec("array")
+  end
+  
+  it "should translate Ruby array to lolz, kthnx" do
+    ["igrigorik", "ig"].to_lolz.should == read_spec("array")
   end
 
   it "should translate mixed Ruby array/hash to lolz, kthnx" do
     h = {:nickname => ["igrigorik", "ig"]}.inspect
     Ruby2Lolz.translate(h).should == read_spec("hash_array")
   end
-
+  
+  it "should translate mixed Ruby array/hash to lolz, kthnx" do
+    {:nickname => ["igrigorik", "ig"]}.to_lolz.should == read_spec("hash_array")
+  end
+  
   it "should translate Ruby method to lolz, kthnx" do
     # [:defn,
     #  :hello,
